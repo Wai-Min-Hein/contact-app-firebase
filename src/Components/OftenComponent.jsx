@@ -40,8 +40,6 @@ const OftenComponent = ({
 const {allFav, setAllFav,userEmail} = useContext(StateContext)
   const { ref, inView } = useInView();
 
-  console.log(allFav)
-
   
   const delay = index* 0.1
 

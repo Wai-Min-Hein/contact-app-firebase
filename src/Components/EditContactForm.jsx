@@ -28,7 +28,7 @@ const EditContactForm = ({contact,imgUrl, inputImage,originImg}) => {
 
   const [updateData, setUpdateData] = useState({ ...contact,name, phone, email, address, jobTitle,imgUrl, updateDate:getTime()})
 
-  console.log(updateData)
+ 
 
 
   useEffect(() => {

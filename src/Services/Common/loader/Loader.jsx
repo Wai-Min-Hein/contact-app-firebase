@@ -1,4 +1,4 @@
-import '../loader/loader.css'
+import '../loader/loaderCss.css'
 const Loader = () => {
   return (
     <div className='grid place-items-center h-[70vh]'>

@@ -8,7 +8,7 @@ import { LuImagePlus } from "react-icons/lu";
 import { uploadContactImage } from "../Services/Apis/ImageUploadApi";
 import { useMediaQuery } from "react-responsive";
 import PersonComponent from "../Components/PersonComponent";
-import Loader from "../Services/Common/loader/loader";
+import Loader from "../Services/Common/loader/Loader";
 
 const Person = () => {
   const [contact, setContact] = useState();
