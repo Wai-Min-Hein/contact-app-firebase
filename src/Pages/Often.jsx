@@ -12,7 +12,6 @@ import {
 } from "../Services/Apis/FireStoreApi";
 import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-import Loader from "../Services/Common/loader/loader";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
