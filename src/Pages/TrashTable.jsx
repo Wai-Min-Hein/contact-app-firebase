@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import TrashTableComponent from "../Components/TrashTableComponent";
 import { StateContext } from "../Services/Context/Context";
 import { useMediaQuery } from "react-responsive";
-import Loader from "../Services/Common/loader/Loader";
 
 const TrashTable = () => {
 
