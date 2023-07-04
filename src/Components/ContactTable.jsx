@@ -21,7 +21,6 @@ import {
 import { useNavigate } from "react-router-dom";
 import { useGetContactQuery } from "../Services/Apis/ContactApi";
 import { useMediaQuery } from "react-responsive";
-import Loader from "../Services/Common/loader/loader";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
