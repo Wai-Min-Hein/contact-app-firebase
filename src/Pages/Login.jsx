@@ -78,8 +78,8 @@ const Login = () => {
     }
   };
   return (
-    <div className="flex justify-center items-center h-screen">
-      <form  onSubmit={login} className=" w-[20rem] md:w-[25rem]  shadow-lg px-8 py-6 ">
+    <div className="flex justify-center items-center bg-secondary h-screen">
+      <form  onSubmit={login} className=" w-[20rem] md:w-[25rem] bg-white rounded shadow-lg px-8 py-6 ">
         <div className="flex flex-col my-5 p-7">
           <motion.h2
           initial={'closed'}
