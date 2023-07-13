@@ -68,7 +68,7 @@ const SideBar = () => {
 
   return (
     <motion.div
-      className="absolute w-[60%] sm:w-[37%] md:w-[25%] lg:w-[18%]  top-0 left-0 shadow-xl  bg-background py-8 h-screen  z-50   lg:block"
+      className="absolute w-[60%] sm:w-[37%] md:w-[25%] lg:w-[18%]  top-0 left-0 shadow-xl  text-yellow bg-primary border-r-2 border-r-red py-8 h-full z-50   lg:block"
       initial={{ x: 0 }}
       animate={menuActive ? { x: -400 } : { x: 0 }}
       transition={{ duration: 0.25 }}
@@ -77,9 +77,9 @@ const SideBar = () => {
       <div className="px-2">
         <button
           onClick={() => setModalActive(!modalActive)}
-          className="flex items-center justify-center gap-3 w-full bg-button shadow px-5 py-3 rounded-full"
+          className="flex items-center justify-center gap-3 w-full bg-yellow shadow px-5 py-3 rounded-full"
         >
-          <FaPlus />
+          <FaPlus className="text-primary"/>
           <span className="text-md text-button-text font-medium">
             Add a contact
           </span>
@@ -96,7 +96,7 @@ const SideBar = () => {
                     opacity: 1,
                     scale: 1,
                     height: "6rem",
-                    width: "15rem",
+                    width: "12rem",
                   }
                 : {
                     opacity: 0,
@@ -106,7 +106,7 @@ const SideBar = () => {
                   }
             }
             transition={{ duration: 0.2 }}
-            className="absolute top-0   right-0 px-4 py-6 bg-button text-button-text shadow-lg rounded-sm z-50"
+            className="absolute top-0 right-0 px-4 py-6 bg-white text-primary shadow-lg rounded-md z-50"
           >
             <GrFormClose
               onClick={() => setModalActive(false)}
@@ -114,7 +114,7 @@ const SideBar = () => {
             />
             <div className="">
               <Link to={"/new"}>
-                <div className="flex items-center justify-start gap-5 md:gap-2 mb-3 ">
+                <div className="flex items-center justify-start gap-5 mb-3 ">
                   <FaRegUser />
                   <span>Add contact</span>
                 </div>
@@ -141,13 +141,13 @@ const SideBar = () => {
                 !phone && setMenuActive(true)
               )}
               className={`flex items-center justify-start gap-8  px-6  rounded-e-full py-2 w-full ${
-                contact ? "bg-button text-button-text" : "hover:bg-hover"
+                contact ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white"
               }`}
             >
               <FaRegUser />
               <div className="flex items-center justify-between gap-3 flex-1">
                 <p>Contact</p>
-                <span>{contactCount}</span>
+                <span className="px-2 py-1 bg-background text-red rounded-full">{contactCount}</span>
               </div>
             </button>
           </Link>
@@ -162,13 +162,13 @@ const SideBar = () => {
                 !phone && setMenuActive(true)
               )}
               className={`flex items-center justify-start gap-8   px-6  rounded-e-full py-2 w-full ${
-                often ? "bg-button text-button-text" : "hover:bg-hover"
+                often ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white" 
               }`}
             >
               <LuBookDown />
               <div className="flex items-center justify-between gap-3 flex-1">
                 <p>favorite contacts</p>
-                <span>{favCount}</span>
+                <span className="px-3 py-1 bg-background text-red rounded-full">{favCount}</span>
               </div>
             </button>
           </Link>
@@ -183,7 +183,7 @@ const SideBar = () => {
                 !phone && setMenuActive(true)
               )}
               className={`flex items-center justify-between gap-8   px-6  rounded-e-full py-2 w-full ${
-                other ? "bg-button text-button-text " : "hover:bg-hover"
+                other ? "bg-yellow text-button-text " : "hover:bg-secondary hover:text-white" 
               }`}
             >
               <div className="flex items-center justify-start gap-8">
@@ -210,7 +210,7 @@ const SideBar = () => {
               !phone && setMenuActive(true)
             )}
             className={`flex items-center justify-start gap-8    px-6  rounded-e-full py-2 w-full ${
-              consolidate ? "bg-button text-button-text" : "hover:bg-hover"
+              consolidate ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white" 
             }`}
           >
             <MdOutlineAutoFixHigh />
@@ -228,18 +228,18 @@ const SideBar = () => {
               !phone && setMenuActive(true)
             )}
             className={`flex items-center justify-start gap-8   px-6  rounded-e-full py-2 w-full ${
-              trash ? "bg-button text-button-text" : "hover:bg-hover "
+              trash ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white "
             }`}
           >
             <RiDeleteBin6Line />
             <div className="flex items-center justify-between gap-3 flex-1">
               <p>Trash can</p>
-              <span>{tarshCount}</span>
+              <span className="py-1 px-3 text-red bg-white rounded-full">{tarshCount}</span>
             </div>
           </button>
         </Link>
 
-        {/* <button onClick={signOut} className="px-3 py-2 bg-button text-button-text rounded-md mt-5 w-full">
+        {/* <button onClick={signOut} className="px-3 py-2 bg-yellow text-button-text rounded-md mt-5 w-full">
           Log Out
         </button> */}
       </div>

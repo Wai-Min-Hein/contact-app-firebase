@@ -24,12 +24,11 @@ th,td{
 	height: 90vh;
 }
 .swiper-pagination {
-	position: absolute;
+	/* position: fixed; */
 	bottom: 0 !important;
+	margin-top: 2rem;
 	left: 50%;
-
-	padding-top: 2rem !important;
-	
+	/* padding-top: 2rem !important; */
 }
 .swiper-pagination-bullet {
 	width: 1.5rem !important;

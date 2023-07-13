@@ -177,8 +177,8 @@ const {allFav, setAllFav,userEmail} = useContext(StateContext)
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       
-      className={`cursor-pointer relative flex items-center z-20 justify-between gap-5 md:gap-0 w-full mt-5 py-2  ${
-        isChecked || isHovered ? "bg-hover" : ""
+      className={`cursor-pointer relative flex items-center z-20 transition duration-500 justify-between gap-5 md:gap-0 w-full mt-5 py-2  ${
+        isChecked || isHovered ? "bg-secondary text-white transition duration-300 rounded-lg px-3" : ""
       }`}
     >
       <div className="text-start   text-[.8rem] basis-[40%] sm:basis-[33%] md:basis-[30%]  md:text-[1rem] lg:text-[1.2rem]">
@@ -228,7 +228,7 @@ const {allFav, setAllFav,userEmail} = useContext(StateContext)
       >
         {contact?.email?contact?.email:'example@gmail.com'}
       </div>
-      <div className="text-start  basis-1/5 text-[.8rem] md:text-[1rem] lg:text-[1.2rem] justify-self-start"
+      <div className="text-start basis-1/5 text-[.8rem] md:text-[1rem] lg:text-[1.2rem] justify-self-start"
         onClick={(e) => {
           nav(`person/${contactId}`);
         }}
@@ -266,11 +266,11 @@ const {allFav, setAllFav,userEmail} = useContext(StateContext)
               initial={{ opacity: 0, scale: 0, height: "1rem", width: "2rem" }}
               animate={
                 modalActive
-                  ? { opacity: 1, scale: 1, height: "2.75rem", width: "12rem" }
+                  ? { opacity: 1, scale: 1, height: "2.75rem", width: "10rem" }
                   : { opacity: 0, scale: 0, height: "1rem", width: "2rem" }
               }
               transition={{ duration: 0.2 }}
-              className="absolute top-0 h-auto   right-[1rem] px-4 py-2 bg-button text-button-text shadow-lg rounded-sm z-[100]"
+              className="absolute top-0 bottom-0 h-auto right-[1rem] px-4 py-2 border border-red bg-white text-red shadow-lg rounded-md z-[100]"
             >
               <div className="z-50">
                 {/* <div className="flex items-center justify-start gap-5">
@@ -287,7 +287,7 @@ const {allFav, setAllFav,userEmail} = useContext(StateContext)
                 </div> */}
                 <div
                   onClick={handleDelete}
-                  className="flex items-center justify-start gap-5 "
+                  className="flex items-center justify-start gap-3 "
                 >
                   <RiDeleteBin6Line />
                   <span>to delete</span>

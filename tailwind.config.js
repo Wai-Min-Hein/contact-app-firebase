@@ -27,6 +27,10 @@ export default {
 ,
     extend: {
       colors: {
+        primary: "#1D5B79",
+        secondary:"#468B97",
+        red: "#EF6262",
+        yellow: "#F3AA60",
         'background' : '#f0f9ff', //[sky-50]
         'headline' : '#082f49', //[sky-950]
         'para' : '#075985', //[sky-800]

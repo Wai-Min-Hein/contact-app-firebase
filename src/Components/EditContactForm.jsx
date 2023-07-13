@@ -63,7 +63,7 @@ const contactId = contact?.id
         nav('/')
       }
   return (
-    <form onSubmit={handleEditContact} action="" className=" w-[20rem] md:w-[25rem] mb-10 mt-4 bg-background px-8 py-6 shadow-xl rounded-lg">
+    <form onSubmit={handleEditContact} action="" className=" w-[20rem] md:w-[25rem] mb-10 my-4 bg-background px-8 py-6 shadow-xl rounded-lg">
         
         <div className="">
           <input

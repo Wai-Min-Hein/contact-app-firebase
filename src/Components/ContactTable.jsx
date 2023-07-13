@@ -131,7 +131,7 @@ const ContactTable = () => {
           : { marginLeft: 0 }
       }
       transition={{ duration: 0.25 }}
-      className={`flex-1 lg:px-8 px-1 pt-8 relative`}
+    className={`flex-1 lg:px-8 px-1 py-8 bg-white text-primary relative`}
     >
       <div className=" w-full sm:px-5 max-h-[80vh] font-medium relative">
         <div
@@ -144,13 +144,13 @@ const ContactTable = () => {
               <div className="text-start basis-[30%] sm:basis-[33%] md:basis-[30%] lg:basis-1/4  text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
                 Name
               </div>
-              <div className="text-start basis-1/5 text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
+              <div className="text-center basis-1/5 text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
                 Email
               </div>
-              <div className="text-start  basis-1/5 text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
-                ph no
+              <div className="text-center  basis-1/5 text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
+                Phone
               </div>
-              <div className="text-start basis text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
+              <div className="text-center basis text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
                 job
               </div>
               <div className="inline-block md:hidden">
@@ -192,7 +192,7 @@ const ContactTable = () => {
                           }
                     }
                     divansition={{ duration: 0.2 }}
-                    className="absolute top-[3rem]   right-0 px-4 py-6 bg-button text-button-text shadow-lg rounded-sm z-50"
+                    className="absolute top-[3rem] right-0 px-4 py-6 bg-button text-button-text shadow-lg rounded-sm z-50"
                   >
                     <div className="">
                       <div className="flex items-center justify-start gap-5">
