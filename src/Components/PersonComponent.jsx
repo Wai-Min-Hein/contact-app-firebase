@@ -167,15 +167,15 @@ const PersonComponent = ({ contact }) => {
           : { marginLeft: 0 }
       }
       transition={{ duration: 0.25 }}
-      className={` bg-transparent max-h-[100vh] rounded-2xl ${
+      className={` bg-secondary h-full ${
         menuActive ? "" : ""
       }`}
     >
-      <div className="w-full md:w-3/4 mx-auto">
-        <div className=" pt-10   bg-cover">
+      <div className="w-full h-full md:w-3/4 mx-auto">
+        <div className=" py-10  bg-cover">
           <div>
             <Link to={"/"}>
-              <IoIosArrowBack className=" text-3xl     cursor-pointer" />
+              <IoIosArrowBack className=" text-3xl text-white cursor-pointer" />
             </Link>
           </div>
           {/* Profile+Edit btn div */}
@@ -214,7 +214,7 @@ const PersonComponent = ({ contact }) => {
             ) : (
               <div className=" gap-8">
                 {contact?.imgUrl ? (
-                  <div className="w-[10rem] h-[10rem] rounded-full overflow-hidden">
+                  <div className="w-[10rem] h-[10rem] rounded-full">
                     <img
                       src={contact?.imgUrl}
                       className="w-full h-full block"
@@ -222,16 +222,16 @@ const PersonComponent = ({ contact }) => {
                     />
                   </div>
                 ) : (
-                  <div className="w-[10rem] h-[10rem] rounded-full bg-button grid place-items-center">
+                  <div className="w-[10rem] h-[10rem] rounded-full bg-yellow text-white grid place-items-center">
                     <h1 className="text-5xl">{username && username[0]}</h1>
                     {/* <h1 className="text-5xl">w</h1> */}
                   </div>
                 )}
                 {/* <h1 className="text-xl">w</h1> */}
-                <h1 className=" text-center text-xl gap-5">{username}</h1>
-                <div className=" my-2 flex justify-center items-center gap-5">
-                  <HiPhone className="  text-xl    cursor-pointer" />
-                  <MdEmail className=" text-xl    cursor-pointer" />
+                <h1 className=" text-center text-2xl text-white mt-3 gap-5">{username}</h1>
+                <div className=" my-2 flex justify-center text-yellow items-center gap-5">
+                  <HiPhone className="  text-2xl    cursor-pointer" />
+                  <MdEmail className=" text-2xl    cursor-pointer" />
                 </div>
               </div>
             )}
@@ -242,7 +242,7 @@ const PersonComponent = ({ contact }) => {
             <div className="text-left my-4 mx-3 w-[80%]">
               <button
                 onClick={() => setEditActive(!editActive)}
-                className="bg-button px-4 py-2 rounded-xl  text-white font-semibold hover:shadow-xl hover:bg-[#3590ba]"
+                className="bg-primary px-4 py-2 rounded-xl  text-white font-semibold hover:shadow-xl hover:bg-white hover:text-primary"
               >
                 {
                   editActive? (
@@ -256,7 +256,7 @@ const PersonComponent = ({ contact }) => {
               </button>
             </div>
             {editActive ? (
-              <div className="grid place-items-center">
+              <div className="grid mb-6 place-items-center">
                 <EditContactForm
                 contact={contact}
                 imgUrl={imgUrl}
@@ -266,7 +266,7 @@ const PersonComponent = ({ contact }) => {
               </div>
             ) : (
               <div className="mt-10 sm:flex sm:mx-4 rounded-xl  items-stretch justify-between px-5 py-4 md:gap-10">
-                <div className="border-2 rounded-md px-6 py-4 basis-[45%]">
+                <div className="rounded-md px-6 py-4 basis-[45%] bg-white shadow-md">
                   <h4 className="text-lg md:text-xl text-header">Contact details</h4>
                   <p className="text-para text-md md:text-lg mt-3">Phone number - {contact?.phone}</p>
                   {
@@ -279,7 +279,7 @@ const PersonComponent = ({ contact }) => {
                     )
                   }
                 </div>
-                <div className="border-2 rounded-md px-6 py-4 basis-[50%] ">
+                <div className="rounded-md px-6 py-4 basis-[50%] bg-white shadow-md ">
                   <h4 className="text-lg md:text-xl text-header">Records</h4>
                   <p className="text-para text-md md:text-lg mt-3">Last update time : {contact?.updateDate}</p>
                   <p className="text-para text-md md:text-lg mt-3">Created at : {contact?.createDate}</p>

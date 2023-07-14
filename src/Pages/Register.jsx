@@ -74,11 +74,11 @@ const Register = () => {
   };
 
   return (
-    <div className="bg-background shadow-lg w-full h-screen grid place-items-center">
+    <div className="bg-secondary shadow-lg w-full h-screen grid place-items-center">
       <form
         onSubmit={register}
         action=""
-        className=" w-[20rem] md:w-[25rem] mx-auto bg-background shadow-xl px-6 py-8 rounded"
+        className=" w-[20rem] md:w-[25rem] mx-auto bg-white shadow-xl px-6 py-8 rounded"
       >
         {/* <motion.div
           initial={'closed'}

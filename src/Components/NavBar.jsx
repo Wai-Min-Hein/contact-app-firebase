@@ -17,7 +17,7 @@ const NavBar = () => {
 
 
   return (
-    <div className="flex justify-between items-center  gap-10 px-6 pt-2">
+    <div className="flex justify-between items-center text-yellow bg-primary gap-10 px-6 py-2">
       <div className="flex items-center justify-start gap-3 basis-[20%] lg:basis-[18%]">
         <button
           onClick={() => setMenuActive(!menuActive)}
@@ -47,7 +47,7 @@ const NavBar = () => {
         </div>
         
       </div>
-      <div className=" items-center justify-start gap-3  flex">
+      <div className=" items-center justify-start gap-3 border border-red hover:bg-white transition duration-300 text-yellow px-4 py-2 rounded flex">
       {/* <div className="flex items-center justify-start gap-6 px-5 text-white">
           <GrCircleQuestion className="text-2xl text-white " />
           <TbSettings className="text-2xl" />
@@ -60,7 +60,7 @@ const NavBar = () => {
         </div> */}
           <button className="flex items-center justify-start gap-2">
           <BiUserCircle  onClick={()=>setLogoutActive(!logoutActive)} className="text-4xl"  />
-          <h2 className="text-para capitalize">{currentUser?.name}</h2>
+          <h2 className=" capitalize">{currentUser?.name}</h2>
 
           </button>
       </div>

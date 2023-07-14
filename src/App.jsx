@@ -34,11 +34,11 @@ const App = () => {
 
 
   return (
-    <div className=" font-primary bg-background text-para w-full  min-h-screen overflow-hidden">
+    <div className=" font-primary bg-white text-para w-full min-h-screen overflow-hidden">
       {!isRegOrLogin && <NavBar  />}
       
       <div
-        className="relative max-h-[100vh]"
+        className="relative min-h-[100vh]"
       >
         {!isRegOrLogin && <SideBar />}
         {!isRegOrLogin && <Logout/>}

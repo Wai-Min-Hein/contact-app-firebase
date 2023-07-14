@@ -102,7 +102,7 @@ const Often = () => {
                 Email
               </div>
               <div className="text-start  basis-1/5 text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
-                ph no
+                Phone
               </div>
               <div className="text-start basis text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
                 job

@@ -99,9 +99,9 @@ const fileRef = useRef()
         : { marginLeft: 0 }
     }
     transition={{ duration: 0.25 }}
-      className={`bg-transparent  pt-8 px-8 grid place-items-center ${menuActive ? "" : ""}`}
+      className={`bg-transparent bg-gray py-8 px-8 grid place-items-center ${menuActive ? "" : ""}`}
     >
-      <form onSubmit={handleCreateContact} action="" className=" w-[20rem] md:w-[25rem] bg-background shadow-2xl rounded-lg px-8 py-6">
+      <form onSubmit={handleCreateContact} action="" className=" w-[20rem] md:w-[25rem] bg-white shadow-2xl rounded-lg px-8 py-6">
         <div onClick={() => fileRef.current.click()} className="w-[8rem] h-[8rem] overflow-hidden mb-8 bg-button rounded-full grid place-items-center cursor-pointer" >
         {inputImage? (
                   <img src={inputImage} className="block w-full h-full" alt="" />
