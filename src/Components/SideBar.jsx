@@ -68,7 +68,7 @@ const SideBar = () => {
 
   return (
     <motion.div
-      className="absolute w-[60%] sm:w-[37%] md:w-[25%] lg:w-[18%]  top-0 left-0 shadow-xl  text-yellow bg-primary border-r-2 border-r-red py-8 h-full z-50   lg:block"
+      className="absolute w-[60%] sm:w-[37%] md:w-[25%] lg:w-[18%]  top-0 left-0 shadow-xl  text-white bg-primary border-r-2 border-r-red py-8 h-full z-50   lg:block"
       initial={{ x: 0 }}
       animate={menuActive ? { x: -400 } : { x: 0 }}
       transition={{ duration: 0.25 }}
@@ -144,7 +144,7 @@ const SideBar = () => {
                 contact ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white"
               }`}
             >
-              <FaRegUser />
+              <FaRegUser className="text-xl"/>
               <div className="flex items-center justify-between gap-3 flex-1">
                 <p>Contact</p>
                 <span className="px-2 py-1 bg-background text-red rounded-full">{contactCount}</span>
@@ -165,9 +165,9 @@ const SideBar = () => {
                 often ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white" 
               }`}
             >
-              <LuBookDown />
+              <LuBookDown className="text-xl"/>
               <div className="flex items-center justify-between gap-3 flex-1">
-                <p>favorite contacts</p>
+                <p>Favorite </p>
                 <span className="px-3 py-1 bg-background text-red rounded-full">{favCount}</span>
               </div>
             </button>
@@ -187,7 +187,7 @@ const SideBar = () => {
               }`}
             >
               <div className="flex items-center justify-start gap-8">
-                <RxCounterClockwiseClock />
+                <RxCounterClockwiseClock className="text-xl" />
                 
                 <p className="flex-1">other contacts</p>
               </div>
@@ -213,7 +213,7 @@ const SideBar = () => {
               consolidate ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white" 
             }`}
           >
-            <MdOutlineAutoFixHigh />
+            <MdOutlineAutoFixHigh  className="text-2xl"/>
             <p className="truncate">To consolidate and prepare</p>
           </button>
         </Link>
@@ -231,7 +231,7 @@ const SideBar = () => {
               trash ? "bg-yellow text-button-text" : "hover:bg-secondary hover:text-white "
             }`}
           >
-            <RiDeleteBin6Line />
+            <RiDeleteBin6Line className="text-xl"/>
             <div className="flex items-center justify-between gap-3 flex-1">
               <p>Trash can</p>
               <span className="py-1 px-3 text-red bg-white rounded-full">{tarshCount}</span>
