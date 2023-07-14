@@ -189,7 +189,7 @@ const SideBar = () => {
               <div className="flex items-center justify-start gap-8">
                 <RxCounterClockwiseClock className="text-xl" />
                 
-                <p className="flex-1">other contacts</p>
+                <p className="flex-1">Other contacts</p>
               </div>
               {/* <BiInfoCircle /> */}
             </button>

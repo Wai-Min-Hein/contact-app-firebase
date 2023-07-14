@@ -151,8 +151,8 @@ const {allFav, setAllFav,userEmail} = useContext(StateContext)
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       
-      className={`cursor-pointer relative bg-white flex items-center z-20 justify-between gap-5 md:gap-0 w-full mt-5 py-2 ${
-        isChecked || isHovered ? "bg-secondary text-white transition duration-300 rounded-lg px-3" : ""
+      className={`cursor-pointer relative flex items-center z-20 transition duration-300 justify-between gap-5 md:gap-0 w-full mt-5 py-2 ${
+        isChecked || isHovered ? "hover:bg-secondary hover:text-white rounded-lg px-3" : ""
       }`}
     >
       <div className="text-start basis-[30%] sm:basis-[33%] md:basis-[30%] lg:basis-1/4  text-[.8rem] md:text-[1rem] lg:text-[1.2rem]">
