@@ -265,7 +265,7 @@ const PersonComponent = ({ contact }) => {
               />
               </div>
             ) : (
-              <div className="mt-10 sm:flex sm:mx-4 rounded-xl  items-stretch justify-between px-5 py-4 md:gap-10">
+              <div className="mt-10 sm:flex sm:mx-4 rounded-xl  items-stretch justify-between px-5 py-4 gap-5 md:gap-10">
                 <div className="rounded-md px-6 py-4 basis-[45%] bg-white shadow-md">
                   <h4 className="text-lg md:text-xl text-header">Contact details</h4>
                   <p className="text-para text-md md:text-lg mt-3">Phone number - {contact?.phone}</p>

@@ -23,7 +23,7 @@ const Person = () => {
   
  
   return (
-    <div className="pb-8">
+    <div className="pb-8 h-full bg-secondary">
       {
         contact? (<PersonComponent key={id} contact={contact} />): (<Loader/>)
       }
